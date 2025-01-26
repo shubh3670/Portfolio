@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' x='50%' font-size='90' text-anchor='middle' dominant-baseline='middle'>🤖</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shubh Patel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shubh Patel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about"onclick="toggleMenu()" >About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Shubh Profile Picture" >
+
+        </div>
+        <div class="section__text">
+            <p class="section_text_p1"> Hello,I'm</p>
+            <h1 class="title">Shubh Patel</h1>
+            <p class="section__text__p2" id="dynamicText">Data Aficionado</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Shubh_Resume.pdf')"> Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'"> Contact Info</button>
+
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shubh-vivek-patel-1567892a1/'">
+                <img src="./assets/github.png" alt="My github Profile" class="icon" onclick="location.href='https://github.com/shubh3670'">
+
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <p class="section__text_p1"> Get To Know More</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Pircture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon", class="icon">
+                    <h3>Experience</h3>
+                    <p>3+ Ongoing Publications/Projects</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education icon", class="icon">
+                    <h3>Education</h3>
+                    <p>M.s in AI<br> B.Sc in AI</p>
+                    <button class="button2" onclick="window.open('./assets/AT.pdf')">Transcript!</button>
+
+                </div>
+                
+                </div>
+                <div class="text-container">
+                    <p style="text-align: justify;">
+                        Shubh Vivek Patel is a master's student in artificial intelligence at Saint Louis University with two plus years of experience in data science, machine learning, and deep learning. He holds a bachelor's degree in artificial intelligence, which laid the foundation for his strong analytical skills and passion for AI-driven solutions. Proficient in PyTorch, TensorFlow, Python, and SQL, Shubh is also an active open-source contributor. He is passionate about leveraging AI to solve real-world problems and is committed to continuous learning and innovation.
+                    </p>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="details-container">
+        <div>
+            <h1 class="title">Experience</h1>
+        </div>
+        <div class="cont1">
+            
+
+
+        </div>
+        <div id="ED">Shubh</div>
+        <div class="main-container " id="EXP">
+            
+            <div class="line">
+            </div>
+            <div class="card left">
+                <h1> January 2022 - August 2023</h1>
+                <p> <b>Data Scientist </b>(Tatvic Analytics )</p>
+                <p><span class="arrow-link" onclick="openModal()">What I Did Here &rarr;</span></p>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2>My Responsibilities</h2>
+                        <ul>
+                            
+                           <li> Created and deployed a machine learning algorithm to predict temporal inflection points, reducing analysis time by 30% and improving predictive accuracy by 25% through optimized data pipelines using SQL and Tableau.</li>
+                           <li> Optimized feature selection and pre-processing workflows, leveraging real-time business data to enhance model precision and boost point efficiency by 20%.</li>
+                            <li>Spearheaded the integration of machine learning insights into decision-making processes, identifying temporal inflection points to enhance predictive accuracy by 25% and streamline analytical workflows by 40%.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+
+
+            </div>
+            <div class="card right">
+                <h1> September 2023 - Present</h1>
+                <p><b>Research Assistant/ Teaching Assistant</b> (Saint Louis University)</p>
+                <p><span class="arrow-link" onclick="openModal1()">What I Did Here &rarr;</span></p>
+                <div id="myModal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal1()">&times;</span>
+                        <h2>My Responsibilities</h2>
+                        <ul>
+                            <li>Conducted exploratory data analysis (EDA) on Google Analytics data using Python, Pandas, and NumPy, identifying 15 actionable insights that optimized client strategies and drove a 12% increase in conversion rates.</li>
+                            <li>>Developed and optimized a machine learning model with 96% accuracy to predict user engagement, using ensemble methods like Random Forest and Gradient Boosting to increase user interactions by 20% and significantly boost Customer Lifetime Value (CLV).</li>
+                            <li>Engineered web scraping pipelines to aggregate and analyze user behavior, identifying key patterns and optimizing engagement strategies that increased user interaction by 25% and enhanced gross margin on client websites.</li>
+                            <li>Collaborated cross-functionally using Looker Studio, Python, and R Studio to streamline data visualization workflows, accelerating decision-making by 30% through efficient report generation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                
+
+                
+
+            </div>
+            <div class="card left">
+                <h1> January 2023-Present</h1>
+                <p><b> Research Project </b>Under Washington University</p>
+                <p> What I Did Here &rarr;</p>
+
+
+
+            </div>
+            
+        </div>
+
+
+    
+        </div>
+        <br>
+        <br>
+        <br>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                <h2 class="experience-sub-title">Wow Factor &#128165;!!</h2>
+            <div class="article-container">
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>Development </h3>
+                    <p><span class="arrow-link" onclick="openModal2()">Know More &rarr;</span></p>
+                    <div id="myModal2" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal2()">&times;</span>
+                            <ul class="LST">
+                                <li><p>Python</p>
+                                <p>90%</p></li>
+                                <li><p>Java</p>
+                                <p>80%</p></li>
+                                <li><p>R</p>
+                                <p>80%</p></li>
+                                <li><p>C++</p>
+                                <p>40%</p></li>
+                                <li><p>Javascript</p>
+                                <p>70%</p></li>
+                                <li><p>Excel</p>
+                                <p>70%</p></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>Framework</h3>
+                    <p><span class="arrow-link" onclick="openModal3()">Know More &rarr;</span></p>
+                    <div id="myModal3" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal3()">&times;</span>
+                            <ul class="LST">
+                                <li><p>Numpy</p>
+                                <p>80%</p></li>
+                                <li><p>Pandas</p>
+                                <p>90%</p></li>
+                                <li><p>Matplotlib</p>
+                                <p>75%</p></li>
+                                <li><p>Scikit-Learn</p>
+                                <p>80%</p></li>
+                                <li><p>PyTorch</p>
+                                <p>85%</p></li>
+                                <li><p>TensorFlow</p>
+                                <p>80%</p></li>
+                                <li><p>OpenCV</p>
+                                <p>60%</p></li>
+                                <li><p>Seaborn</p>
+                                <p>90%</p></li>
+                                <li><p>Flask</p>
+                                <p>70%</p></li>
+                                <li><p>Plotly</p>
+                                <p>85%</p></li>
+                                <li><p>NLTK</p>
+                                <p>70%</p></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>Data Viz</h3>
+                    <p><span class="arrow-link" onclick="openModal4()">Know More &rarr;</span></p>
+                    <div id="myModal4" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal4()">&times;</span>
+                            <ul class="LST">
+                                <li><p>MySQL</p>
+                                <p>85%</p></li>
+                                <li><p>AWS Databases</p>
+                                <p>70%</p></li>
+                                <li><p>Mongo DB</p>
+                                <p>80%</p></li>
+                                <li><p>Tableau</p>
+                                <p>90%</p></li>
+                                <li><p>Power BI</p>
+                                <p>85%</p></li>
+                                <li><p>Looker Studio</p>
+                                <p>70%</p></li>
+                                <li><p>Google Analytics</p>
+                                <p>80%</p></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            
+        </div>
+            </div>
+
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Fly  High &#128640;</h2>
+            <div class="article-container">
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>ML, Gen AI</h3>
+                    <p><span class="arrow-link" onclick="openModal5()">Know More &rarr;</span></p>
+                    <div id="myModal5" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal5()">&times;</span>
+                            <ul class="LST">
+                                <li><p>Linear And Logistic Regression</p>
+                                <p>95%</p></li>
+                                <li><p>Decision Trees</p>
+                                <p>95%</p></li>
+                                <li><p>Ensemble Models</p>
+                                <p>90%</p></li>
+                                <li><p>Clustering</p>
+                                <p>80%</p></li>
+                                <li><p>CNN</p>
+                                <p>90%</p></li>
+                                <li><p>RNN</p>
+                                <p>90%</p></li>
+                                <li><p>ANN</p>
+                                <p>90%</p></li>
+                                <li><p>Natural Language Processing</p>
+                                <p>60%</p></li>
+                                <li><p>exploratory Data Analysis</p>
+                                <p>90%</p></li>
+                                <li><p>Large Language Models</p>
+                                <p>90%</p></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>CLOUD</h3>
+                    <p><span class="arrow-link" onclick="openModal6()">Know More &rarr;</span></p>
+                    <div id="myModal6" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal6()">&times;</span>
+                            <ul class="LST">
+                                <li><p>Amazon Web Services</p>
+                                <p>80%</p></li>
+                                <li><p>Microsoft Azure</p>
+                                <p>90%</p></li>
+                                <li><p>Google CLoud Platforms</p>
+                                <p>90%</p></li>
+                               
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>DevOps</h3>
+                    <p><span class="arrow-link" onclick="openModal7()">Know More &rarr;</span></p>
+                    <div id="myModal7" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal7()">&times;</span>
+                            <ul class="LST">
+                                <li><p>Git Hub</p>
+                                <p>80%</p></li>
+                                <li><p>Git Bash</p>
+                                <p>70%</p></li>
+                                <li><p>Docker</p>
+                                <p>85%</p></li>
+                                <li><p>CI/CD Pipelines</p>
+                                <p>90%</p></li>
+                                <li><p>Jeera</p>
+                                <p>85%</p></li>
+                                
+                               
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            
+            
+            
+        </div>
+            </div>
+        
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Building Bridges &#x1F517;</h2>
+            <div class="article-container">
+            <article>
+                <img src="./assets/checkmark.png" alt="Experience" class="icon">
+                <div> <h3>Compentencies</h3>
+                    <p><span class="arrow-link" onclick="openModal8()">Know More &rarr;</span></p>
+                    <div id="myModal8" class="modal1">
+                        <div class="modal-content1">
+                            <span class="close1" onclick="closeModal8()">&times;</span>
+                            <ul class="LST">
+                                <li><p>Collaboration</p>
+                                <li><p>Cross Functional Collaboration</p>
+                                <li><p>Communication</p>
+                                <li><p>Teamwork</p>
+
+      
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+            </article>
+            
+            
+            
+        </div>
+            </div>
+        
+            
+        
+            
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+
+    </section>
+    <section id="projects">
+        <p class="section__text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">3D OBJECT RECONSTRUCTION FROM 2D IMAGES</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/tpatel9824/3DImageReconstruction.git'">Github</button>
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">WARFARIN DOSING ANALYSIS USING ML</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/shubh3670/Warfarin-Dosing-Prediction.git'">Github</button>
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">FACTORY PULSE: HEALTH MONITORING SYSTEM</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/LaxminarayanaV7416/RealTimeSensorDataAnalytics.git'">Github</button>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+
+    </section >
+    
+    <section id="contact">
+        <p class="section__text_p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:shubvivekpatel@gmail.com">shubhvivekpatel@gmail.com</a></p>
+
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="Linkedin Icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/shubh-vivek-patel-1567892a1/">Linkedin</a></p>
+
+        </div>
+    </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyrights &#169; 2023 Shubh Patel. All Rights Reserved </p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
