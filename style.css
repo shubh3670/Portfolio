@@ -17,9 +17,7 @@ html{
 p{
     color: rgb(85,85,85);
 }
-.title{
-    margin-bottom: 5px;
-}
+
 /*Transition*/
 
 a,.btn{
@@ -197,6 +195,7 @@ section{
 .title{
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 15px;
 
 }
 
