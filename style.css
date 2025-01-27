@@ -17,7 +17,9 @@ html{
 p{
     color: rgb(85,85,85);
 }
-
+.title{
+    margin-bottom: 5px;
+}
 /*Transition*/
 
 a,.btn{
